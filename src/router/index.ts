@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Detail from '../views/Detail.vue'
 import Home from '../views/Home.vue'
+import SentencesToCardsView from '../views/SentencesToCardsView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/post',
       name: 'post-detail',
       component: Detail,
+    },
+    {
+      path: '/sentences-to-cards',
+      name: 'sentences-to-cards',
+      component: SentencesToCardsView,
     },
   ],
 })
